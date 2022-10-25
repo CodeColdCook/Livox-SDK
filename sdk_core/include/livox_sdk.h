@@ -805,6 +805,8 @@ livox_status LidarStopSampling(uint8_t handle, CommonCommandCallback cb, void *c
  */
 livox_status LidarSetMode(uint8_t handle, LidarMode mode, CommonCommandCallback cb, void *client_data);
 
+int LidarGetMode(uint8_t handle);
+
 /**
  * Set LiDAR extrinsic parameters.
  * @param  handle        device handle.

@@ -124,6 +124,8 @@ typedef enum {
    * Lidar command set, set the working mode and sub working mode of a LiDAR.
    */
   kCommandIDLidarSetMode = 0,
+
+  kCommandIDLidarGetMode = 0x0b,
   /**
    * Lidar command set, set the parameters of a LiDAR.
    */

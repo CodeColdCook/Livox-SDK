@@ -531,6 +531,10 @@ livox_status LidarSetMode(uint8_t handle, LidarMode mode, CommonCommandCallback 
   return result;
 }
 
+int LidarGetMode(uint8_t handle) {
+  return device_manager().device_mode();
+}
+
 livox_status LidarSetExtrinsicParameter(uint8_t handle,
                                         LidarSetExtrinsicParameterRequest *req,
                                         CommonCommandCallback cb,
