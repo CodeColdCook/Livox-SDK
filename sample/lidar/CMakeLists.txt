@@ -13,3 +13,9 @@ target_link_libraries(test_set_mode
         PRIVATE
         ${PROJECT_NAME}_static
         )
+
+add_executable(livox_mode_set livox_mode_set.c)
+target_link_libraries(livox_mode_set
+        PRIVATE
+        ${PROJECT_NAME}_static
+        )
